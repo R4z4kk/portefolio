@@ -9,25 +9,25 @@ const linksList = [
     title: "Compétences",
     caption: "github.com/quasarframework",
     icon: "trending_up",
-    link: "https://github.com/quasarframework",
+    link: "#/skills",
   },
   {
     title: "Projets",
     caption: "chat.quasar.dev",
     icon: "emoji_events",
-    link: "https://chat.quasar.dev",
+    link: "#/projects",
   },
   {
     title: "Github",
     caption: "forum.quasar.dev",
     icon: "insert_link",
-    link: "https://forum.quasar.dev",
+    link: "https://github.com/R4z4kk",
   },
   {
     title: "Gitlab",
     caption: "@quasarframework",
     icon: "insert_link",
-    link: "https://twitter.quasar.dev",
+    link: "https://gitlab.com/R4z4kk",
   },
 ];
 

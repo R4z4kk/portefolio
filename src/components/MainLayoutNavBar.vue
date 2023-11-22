@@ -7,15 +7,24 @@
           round
           icon="menu"
           aria-label="Menu"
-          @click="emit('state',!drawerState)"
+          @click="sendStateChange"
         />
         <q-toolbar-title class="flex flex-center"> active page </q-toolbar-title>
       </q-toolbar>
     </q-header>
 </template>
-<script setup>
-import { ref } from "vue";
-const emit = defineEmits(["state"]);
-// const drawerState = ref(false);
+<script>
+export default {
+  props: {
+    drawerState: Boolean,
+  },
+  emits: ["changeDrawerState"],
+
+  methods: {
+    sendStateChange() {
+      this.$emit("changeDrawerState", !this.drawerState);
+    },
+  },
+};
 </script>
 <style lang="fr"></style>

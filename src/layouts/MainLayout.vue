@@ -17,8 +17,9 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
-      <router-view @click="leftDrawerOpen = false" />
+    <q-page-container @click="leftDrawerOpen = false">
+      <router-view />
+      <FooterForLayer />
     </q-page-container>
   </q-layout>
 </template>
@@ -28,7 +29,7 @@ import { defineComponent, ref } from "vue";
 import MainLayoutMenuLinks from "components/MainLayoutMenuLinks.vue";
 import linksList from "src/assets/navigationLinks";
 import MainLayoutNavBar from "src/components/MainLayoutNavBar.vue";
-
+import FooterForLayer from "src/components/FooterForLayer.vue";
 export default defineComponent({
   setup() {
     const leftDrawerOpen = ref(false);
@@ -45,6 +46,7 @@ export default defineComponent({
   components: {
     MainLayoutMenuLinks,
     MainLayoutNavBar,
+    FooterForLayer,
   },
 });
 </script>

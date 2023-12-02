@@ -30,6 +30,7 @@ import MainLayoutMenuLinks from "components/MainLayoutMenuLinks.vue";
 import linksList from "src/assets/navigationLinks";
 import MainLayoutNavBar from "src/components/MainLayoutNavBar.vue";
 import FooterForLayer from "src/components/FooterForLayer.vue";
+
 export default defineComponent({
   setup() {
     const leftDrawerOpen = ref(false);

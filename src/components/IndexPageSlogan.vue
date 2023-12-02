@@ -1,9 +1,8 @@
 <template lang="fr">
-  <q-img height="200px" src="../assets/wallpaperflare.com_wallpaper.jpg">
-    <div class="absolute-full text-subtitle2 flex flex-center">
-      "Future start tommorow"
-    </div>
-  </q-img>
+
+  <q-parallax :height="200" :speed="1" src="../assets/wallpaperflare.com_wallpaper (2).jpg">
+      <h1 class="word-wrap text-white">"Future starts tommorow"</h1>
+    </q-parallax>
 </template>
 <script>
 export default {};

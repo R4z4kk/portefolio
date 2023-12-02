@@ -1,7 +1,5 @@
 <template lang="fr">
-  <q-card v-for="card in homeCardsContent" :key="card.title">
-
-
+  <q-card class="cards" v-for="card in homeCardsContent" :key="card.title" >
     <q-card-section >
       <div class="text-h6">{{ card.title }}</div>
       <q-img
@@ -56,4 +54,8 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="fr"></style>
+<style scoped>
+.cards {
+  border: 1px solid white;
+}
+</style>

@@ -6,7 +6,10 @@
       animated
       padding
       arrows
-      autoplay
+      infinite
+      :autoplay="autoplay"
+      @mouseenter="autoplay = false"
+      @mouseleave="autoplay = true"
       height="100px"
       class="bg-dark text-white rounded-borders"
     >

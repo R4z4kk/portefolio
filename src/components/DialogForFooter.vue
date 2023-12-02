@@ -12,7 +12,6 @@
         <div class="q-px-md" style="max-width: 600px">
           <q-form
             @submit="onSubmit"
-            @reset="onReset"
             class="q-gutter-md flex row justify-center"
           >
             <q-input

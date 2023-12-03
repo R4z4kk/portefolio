@@ -1,7 +1,12 @@
-<template lang="fr">
-  <div>Skill Page</div>
+<template>
+  <SkillPageCards />
 </template>
 <script>
-export default {};
+import SkillPageCards from "src/components/SkillPageCards.vue";
+export default {
+  components: {
+    SkillPageCards,
+  },
+};
 </script>
-<style lang="fr"></style>
+<style></style>

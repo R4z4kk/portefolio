@@ -1,7 +1,12 @@
 <template lang="fr">
-  <div>Projects Page</div>
+  <ProjectsPageTabs/>
 </template>
 <script>
-export default {};
+import ProjectsPageTabs from "src/components/ProjectsPageTabs.vue";
+export default {
+  components: {
+    ProjectsPageTabs,
+  },
+};
 </script>
 <style lang="fr"></style>

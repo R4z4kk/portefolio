@@ -1,7 +1,7 @@
 <template>
   <DialogForFooter v-model="footerDialog" :showDialog="footerDialog" />
   <q-footer elevated>
-    <q-toolbar>
+    <q-toolbar class="bg-dark footerBorder">
       <q-toolbar-title>
         <pre
           style="text-align: center"
@@ -23,4 +23,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+.footerBorder {
+  border-top: 1px white solid;
+}
+</style>

@@ -1,17 +1,17 @@
-<template lang="fr">
+<template>
   <q-header elevated>
-      <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="sendStateChange"
-        />
-        <q-toolbar-title class="flex flex-center"> active page </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
+    <q-toolbar class="bg-dark navbarBorder">
+      <q-btn
+        flat
+        dense
+        round
+        icon="menu"
+        aria-label="Menu"
+        @click="sendStateChange"
+      />
+      <q-toolbar-title class="flex flex-center"> active page </q-toolbar-title>
+    </q-toolbar>
+  </q-header>
 </template>
 <script>
 export default {
@@ -27,4 +27,8 @@ export default {
   },
 };
 </script>
-<style lang="fr"></style>
+<style>
+.navbarBorder {
+  border-bottom: 2px white solid;
+}
+</style>

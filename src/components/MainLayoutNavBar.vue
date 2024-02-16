@@ -9,7 +9,9 @@
         aria-label="Menu"
         @click="sendStateChange"
       />
-      <q-toolbar-title class="flex flex-center"> active page </q-toolbar-title>
+      <q-toolbar-title class="flex flex-center">
+        {{ this.$route.name }}
+      </q-toolbar-title>
     </q-toolbar>
   </q-header>
 </template>

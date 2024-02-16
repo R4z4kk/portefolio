@@ -5,7 +5,7 @@
       <q-toolbar-title>
         <pre
           style="text-align: center"
-        >Une question ? Un avis ? <u @click="footerDialog = !footerDialog">Contactez-moi</u></pre>
+        ><u @click="footerDialog = !footerDialog">Contactez-moi</u></pre>
       </q-toolbar-title>
     </q-toolbar>
   </q-footer>

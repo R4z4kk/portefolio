@@ -5,7 +5,6 @@
       swipeable
       animated
       padding
-      arrows
       infinite
       :autoplay="autoplay"
       @mouseenter="autoplay = false"
@@ -16,14 +15,13 @@
       <q-carousel-slide :name="1" class="row no-wrap flex-center">
         <q-icon name="trending_up" size="35px" />
         <div class="q-ml-md text-center text-h6">
-          Découvrez mon bilan de compétences :
-          <a href="#/skills">Page de compétences</a>
+          Voir mon <a href="#/skills">bilan de compétences</a>
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="row no-wrap flex-center">
         <q-icon name="emoji_events" size="35px" />
         <div class="q-ml-md text-center text-h6">
-          Découvrez mes réalisations : <a href="#/projects">Page des projets</a>
+          Voir mes <a href="#/projects">réalisations</a>
         </div>
       </q-carousel-slide>
     </q-carousel>

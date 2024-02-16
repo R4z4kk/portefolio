@@ -16,7 +16,7 @@
         <q-list>
           <q-item>
             <q-item-section>
-              <div v-if="!object.diploma">{{ object.substitle }}</div>
+              <div v-if="!object.diploma">- {{ object.substitle }}</div>
               <div v-if="object.diploma" class="text-subtitle2">
                 {{ object.substitle }} - {{ object.diploma }}
                 <span v-if="object.details">
@@ -58,5 +58,10 @@ export default defineComponent({
 <style scoped>
 .cards {
   border: 1px solid white;
+  margin: 0.5em;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }
 </style>

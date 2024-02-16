@@ -3,9 +3,6 @@
     <q-card>
       <q-card-section class="flex row justify-between q-ml-md">
         <div class="text-h6">Formulaire de contact :</div>
-        <div class="justify-end">
-          <q-btn icon="close" flat round dense v-close-popup />
-        </div>
       </q-card-section>
 
       <q-card-section>
@@ -33,8 +30,7 @@
               :rules="[
                 (val) => val.length > 0 || 'Renseignez votre email',
                 (val) =>
-                  (val && emailRegex.test(val)) ||
-                  'Renseignez une adresse valide',
+                  (val && emailRegex.test(val)) || 'Renseignez un email valide',
               ]"
             />
 

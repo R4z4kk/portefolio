@@ -1,9 +1,9 @@
 const homeCardsContent = [
   {
-    title: "En bref",
+    title: "",
     image: "../assets/IMG_20231116_215255.jpg",
     content: [
-      { substitle: "P-A" },
+      { substitle: "Paul-Antoine" },
       { substitle: "28 ans" },
       { substitle: "Développeur autodidacte" },
     ],

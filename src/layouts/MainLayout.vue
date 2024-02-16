@@ -19,8 +19,8 @@
 
     <q-page-container @click="leftDrawerOpen = false">
       <router-view />
-      <FooterForLayer />
     </q-page-container>
+    <FooterForLayer />
   </q-layout>
 </template>
 
@@ -51,3 +51,4 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped></style>

@@ -1,20 +1,18 @@
 <template>
-  <div class="flex row justify-around">
+  <div class="flex justify-around">
     <q-card
       v-for="card in skillPageCardsContent"
       :key="card.title"
       dark
-      class="bg-dark col-5 cardborder"
+      class="bg-dark q-ma-sm cardborder"
     >
       <q-card-section>
-        <div class="text-h6">{{ card.title }}</div>
+        <div class="text-h6 text-center">{{ card.title }}</div>
       </q-card-section>
 
-      <q-separator dark inset />
-
       <q-card-section>
-        <ul v-for="content in card.content" :key="content">
-          <li class="flex items-center justify-between">
+        <ul v-for="content in card.content" :key="content" class="ulclass">
+          <li>
             {{ content.name }}
             <span>
               <q-rating
@@ -47,5 +45,10 @@ export default {
 <style>
 .cardborder {
   border: 1px solid white;
+}
+.ulclass {
+  padding: inherit;
+  text-align-last: center;
+  list-style-type: none;
 }
 </style>
